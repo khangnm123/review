@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Poppins:wght@300;400;600&family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  :root {
+    --heights: 50vh;
+    --widths: 100%;
+  }
+  
+  .slider-container {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50% , -50%);
+
+  }
+  
+  .active {
+    display: inline-block;
+  }
+  
+  .inactive {
+    display: none;
+  }
+
+  .slide-image {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    object-fit: cover;
+    top: -80px;
+    border-radius: 50%;
+    right: 295px;
+  }
+ .prev{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #000;
+    padding: 6px 16px;
+    font-size: 22px;
+    cursor: pointer;
+    top: 220px;
+    left: 20px;
+ }
+ .next{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #000;
+    padding: 6px 16px;
+    font-size: 22px;
+    left: 80px;
+    cursor: pointer;
+    top: 220px;
+ }
+ .slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in;
+}
+
+.all-dots {
+  width: 25%;
+  height: 7%;
+  position: absolute;
+  display: flex;
+  /* top: 35%; */
+  justify-content: space-around;
+  z-index: 200;
+  left: 36%;
+  bottom: -50px;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0px 3px;
+    background: #00CC96;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    border-radius: 50%;
+    display: inline-block;
+  }
+.active-dot {
+  background: none;
+  border: 1px solid #00CC96;
+}
+  .slide-title{
+  font-style: normal;
+font-weight: bold;
+font-size: 24px;
+font-family: 'Poppins', sans-serif;
+margin: 10px 0px;
+  }
+  .slide-text{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+  }
+  
